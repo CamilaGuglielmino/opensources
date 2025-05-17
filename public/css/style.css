@@ -1,0 +1,167 @@
+/* ----- VARIABLES CSS PARA FACILITAR PERSONALIZACIÓN ----- */
+:root {
+    --color-primario: rgb(80, 38, 91);
+    --color-secundario: rgb(237, 209, 245);
+    --color-texto: white;
+    --color-fondo: #f4f4f4;
+}
+
+/* ----- NAVBAR ----- */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-primario);
+    z-index: 1000;
+    padding: 10px 15px;
+}
+
+.navbar .btn {
+    color: var(--color-texto);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background-color: var(--color-secundario);
+}
+
+/* ----- LOGO ----- */
+.logo {
+    max-width: 80px;
+    height: auto;
+}
+
+/* ----- BODY ----- */
+body {
+    padding-top: 80px; /* Ajuste para la navbar fija */
+    padding-bottom: 60px; /* Ajuste para el footer fijo */
+    background-color: var(--color-fondo);
+    font-family: 'Arial', sans-serif;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* ----- ALERTAS ----- */
+.alert {
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ----- SECCIONES ----- */
+.section-content {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* ----- FORMULARIOS ----- */
+.form-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* ----- BOTONES PERSONALIZADOS ----- */
+.btn-primary-custom {
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-texto);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--color-secundario);
+}
+
+/* ----- MENÚS ----- */
+.bg-custom {
+    background-color: var(--color-primario) !important;
+    color: var(--color-texto);
+}
+
+/* ----- DROPDOWN ----- */
+.dropdown-menu {
+    background-color: var(--color-primario) !important;
+    border-radius: 5px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--color-texto);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-secundario);
+}
+
+/* ----- ESTILOS PARA PRIORIDADES ----- */
+.prioridad-alta {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+.prioridad-normal {
+    background-color: #ffc107; /* Amarillo */
+    color: black;
+}
+
+.prioridad-baja {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+/* ----- ESTILOS PARA ESTADOS ----- */
+.estado-definido {
+    color: #007bff; /* Azul */
+}
+
+.estado-en-proceso {
+    color: #ffc107; /* Amarillo */
+}
+
+.estado-completada {
+    color: #28a745; /* Verde */
+}
+
+/* ----- EFECTOS EN INTERACCIÓN ----- */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* ----- MODAL ----- */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* ----- MEJOR VISUALIZACIÓN EN MÓVILES ----- */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
