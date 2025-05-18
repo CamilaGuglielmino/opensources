@@ -1,3 +1,4 @@
+>>>> Para iniciar sesión se puede usar cami@gmail.com y como contraseña 1111111
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
